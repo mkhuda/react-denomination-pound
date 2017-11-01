@@ -32,6 +32,15 @@ class FormInput extends Component {
 
     return (
       <div>
+      <div className="sampleInputCase">
+        <h4>Sample</h4>
+        <div title="Copy this" className="itemCase">432</div>
+        <div title="Copy this" className="itemCase">213p</div>
+        <div title="Copy this" className="itemCase">£14</div>
+        <div title="Copy this" className="itemCase">£16.23p</div>
+        <div title="Copy this" className="itemCase">£54.04</div>
+        <div title="Copy this" className="itemCase">001.41p</div>
+      </div>
         <form className="mainForm" onSubmit={this.handleSubmit.bind(this)}>
           <input
             type="text"

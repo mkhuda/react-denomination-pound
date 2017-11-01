@@ -51,6 +51,59 @@ h1.thin {
   text-align: center;
 }
 
+.sampleInputCase {
+  text-align: center;
+  float: left;
+  position: absolute;
+  left: 0;
+  top: 10%;
+  padding-top: 5%;
+}
+
+.sampleInputCase .itemCase {
+  font-size: 12px;
+  background: #fff;
+  padding: 10px;
+  margin: 3px;
+  text-align: center;
+  color: #656565;
+  font-weight: normal;
+  border: 1px solid #f2f2f2;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 400px;
+    margin: 20% auto;
+    min-height: 80%;
+    border: 1px solid #e6e9eb;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    
+  }
+  
+  .sampleInputCase {
+    text-align: center;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    top: inherit;
+    padding-top: 5%;
+  }
+
+  .sampleInputCase .itemCase {
+    font-size: 12px;
+    background: #fff;
+    padding: 10px;
+    margin: 3px;
+    text-align: center;
+    color: #656565;
+    font-weight: normal;
+    border: 1px solid #f2f2f2;
+    display: inline-block;
+  }
+}
+
 .mainForm .inputText {
   font-family: 'Quicksand', sans-serif;
   font-weight: 100;
