@@ -17,7 +17,11 @@ import {format, unformat} from 'accounting-js'
        else if(value.slice(-1) == 'p') {
          return this.isInt(unformat(value)) ? unformat(value)/100 : unformat(value)
        } else {
-         return unformat(value)
+         if(unformat(value).toString().length == 3){
+           return unformat(value)/100
+         } else {
+           return unformat(value)
+         }
        }
      }
    },
