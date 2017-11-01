@@ -23,7 +23,7 @@ module.exports = {
         loader: 'babel-loader',
         exclude: /node_modules/,
         query: {
-          presets: ['react', 'env', 'react-hmre']
+          presets: ['react', 'es2015', 'react-hmre']
         }
       },
       { test: /\.css$/, loader: "style-loader!css-loader" }
