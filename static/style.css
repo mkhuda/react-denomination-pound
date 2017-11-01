@@ -1,0 +1,121 @@
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700';
+/* CSS declarations go here */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 10% auto;
+  min-height: 100%;
+  border: 1px solid #e6e9eb;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.container #app {
+  background-color: #fff;
+  padding: 20px;
+}
+
+h1.title {
+  margin-top: 0px;
+  padding: 20px;
+  color: #222;
+  text-align: center;
+  margin-bottom: 10px;
+  background: #f2f2f2;
+  border-bottom: 1px solid #e6e9eb;
+}
+
+h5.footer {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding: 20px;
+  color: #222;
+  text-align: center;
+  background: #f2f2f2;
+  border-top: 1px solid #e6e9eb;
+}
+
+h1.thin {
+  margin-top: 0px;
+  text-align: center;
+  font-weight: 100;
+}
+
+.mainForm {
+  text-align: center;
+}
+
+.mainForm .inputText {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 100;
+  background: white;
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 1px solid #f2f2f2;
+}
+
+.mainForm .validate-info {
+  text-align: center;
+  padding: 10px;
+  color: #e91e63;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.mainForm .divButton {
+  margin-top: 10px;
+}
+
+.mainForm .mainButton {
+  cursor: pointer;
+  background-color: #008CBA; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.mainForm .mainButton:hover {
+  background-color: #222222;
+}
+
+.result-view {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.result-view .result-item {
+  text-align: center;
+}
+
+.result-view .result-item .item {
+  width: 120px;
+  font-size: 14px;
+  background: #fff;
+  padding: 10px;
+  display: initial;
+  margin: 3px;
+  text-align: center;
+  color: #656565;
+  font-weight: bold;
+  border-top: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.result-view .result-item .item-pound {
+  border-left: 3px solid #ff5722;
+}
+
+.result-view .result-item .item-pence {
+  border-left: 3px solid #8bc34a;
+}

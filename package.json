@@ -1,0 +1,45 @@
+{
+  "name": "react-currency-redenomination-sample",
+  "version": "0.0.1",
+  "description": "This is a just a sample for currency redenomination using React",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon server/server.js --ignore components",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mkhuda/react-car-leasing.git"
+  },
+  "author": "Muhammad K Huda",
+  "license": "none",
+  "dependencies": {
+    "babel-core": "^6.4.5",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-react-hmre": "^1.1.0",
+    "compression": "^1.6.1",
+    "css-loader": "^0.28.7",
+    "express": "^4.13.4",
+    "isomorphic-fetch": "^2.1.1",
+    "react": "^16.0.0",
+    "react-currency-input": "^1.0.4",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "react-select": "^1.0.0-beta14",
+    "redux": "^3.3.1",
+    "redux-devtools": "^3.3.1",
+    "redux-devtools-instrument": "^1.0.1",
+    "redux-logger": "^3.0.6",
+    "remotedev-app": "^0.10.8",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.8.1",
+    "webpack-dev-middleware": "^1.5.1",
+    "webpack-hot-middleware": "^2.6.4"
+  },
+  "devDependencies": {
+    "accounting-js": "^1.1.1",
+    "babel-preset-env": "^1.6.1"
+  }
+}
