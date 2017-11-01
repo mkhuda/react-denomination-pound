@@ -9,10 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mkhuda/react-car-leasing.git"
+    "url": "https://github.com/mkhuda/react-denomination-pound"
   },
   "author": "Muhammad K Huda",
-  "license": "none",
+  "license": "GNU GPL v3.0",
   "dependencies": {
     "babel-core": "^6.4.5",
     "babel-loader": "^7.1.2",
