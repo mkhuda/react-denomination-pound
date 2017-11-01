@@ -8,7 +8,7 @@ import {format, unformat} from 'accounting-js'
 
  const CurrencyFormating = {
    validateInput(value){
-     if(unformat(value) == 0 || value.includes("p.")) {
+     if(unformat(value) == 0 || value.includes("p.") || value.includes(".p")) {
        return false
      } else {
        if(value.charAt(0) == '£') {
@@ -37,6 +37,9 @@ import {format, unformat} from 'accounting-js'
          });
        }
        if(amountArr[1] !== undefined) {
+          if (amountArr[1].length > 2) {
+            amountArr[1] = amountArr[1].substring(0, 2);
+          }
          penceArr.forEach(function(r) {
            let total = Math.floor(amountArr[1]/r)
            parseInt(total) != 0 && resultCoins.push({symbol: 'p', string: total +' x '+ r + 'p'})
