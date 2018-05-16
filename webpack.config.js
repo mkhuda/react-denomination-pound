@@ -1,9 +1,8 @@
 const webpack = require('webpack');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  devtool: 'inline-source-map',
   entry: [
-    'webpack-hot-middleware/client',
     './client/client.js'
   ],
   output: {
@@ -11,10 +10,6 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/'
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoEmitOnErrorsPlugin()
-  ],
   module: {
     rules: [
       {
@@ -25,7 +20,20 @@ module.exports = {
           presets: ['react', 'es2015', 'react-hmre']
         }
       },
-      { test: /\.css$/, loader: "style-loader!css-loader" }
+      {
+        test: /\.css$/,
+        loader: "style-loader!css-loader"
+      },
+      {
+        test: /\.html$/,
+        loader: "html-loader"
+      }
     ]
-  }
+  },
+  plugins: [
+    new HtmlWebPackPlugin({
+      template: "./client/index.html",
+      filename: "./index.html"
+    })
+  ],
 }
