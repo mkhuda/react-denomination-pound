@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "nodemon server/server.js --ignore components",
-    "start": "node server/server.js"
+    "start": "node server/server.js",
+    "webpack:build": "webpack -d --watch"
   },
   "repository": {
     "type": "git",
@@ -41,6 +42,7 @@
   },
   "devDependencies": {
     "accounting-js": "^1.1.1",
-    "babel-preset-env": "^1.6.1"
+    "babel-preset-env": "^1.6.1",
+    "webpack-cli": "^2.1.3"
   }
 }
