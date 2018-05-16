@@ -1,13 +1,13 @@
-var express = require('express');
-var path = require('path');
-var config = require('../webpack.config.js');
-var webpack = require('webpack');
-var webpackDevMiddleware = require('webpack-dev-middleware');
-var webpackHotMiddleware = require('webpack-hot-middleware');
+const express = require('express');
+const path = require('path');
+const config = require('../webpack.config.js');
+const webpack = require('webpack');
+const webpackDevMiddleware = require('webpack-dev-middleware');
+const webpackHotMiddleware = require('webpack-hot-middleware');
 
-var app = express();
+const app = express();
 
-var compiler = webpack(config);
+const compiler = webpack(config);
 
 app.use(webpackDevMiddleware(compiler, {noInfo: true, publicPath: config.output.publicPath}));
 app.use(webpackHotMiddleware(compiler));
@@ -18,7 +18,7 @@ app.use('/', function (req, res) {
     res.sendFile(path.resolve('client/index.html'));
 });
 
-var port = process.env.PORT || 5000;
+const port = process.env.PORT || 5000;
 
 app.listen(port, function(error) {
   if (error) throw error;
