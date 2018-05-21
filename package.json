@@ -4,9 +4,8 @@
   "description": "This is a just a sample for currency redenomination using React",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "nodemon server/server.js --ignore components",
+    "serve": "nodemon server",
     "start": "node server/server.js NODE_ENV=production",
-    "dev": "node server/server.js NODE_ENV=development",
     "webpack:build": "webpack -d --watch",
     "webpack:production": "webpack -p"
   },
