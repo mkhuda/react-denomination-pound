@@ -40,6 +40,7 @@ class FormInput extends Component {
         <div title="Copy this" className="itemCase">£16.23p</div>
         <div title="Copy this" className="itemCase">£54.04</div>
         <div title="Copy this" className="itemCase">001.41p</div>
+        <div title="Copy this" className="itemCase">one cent</div>
       </div>
         <form className="mainForm" onSubmit={this.handleSubmit.bind(this)}>
           <input
@@ -49,11 +50,11 @@ class FormInput extends Component {
             defaultValue={this.state.inputAmount}
             className="inputText"
           />
-          
+
           <div className="validate-info">
             { (this.props.validate == false) ? 'Please provide valid input' : '' }
           </div>
-          
+
           <div className="divButton">
             <input className="mainButton" type="submit" value="Convert"/>
           </div>
